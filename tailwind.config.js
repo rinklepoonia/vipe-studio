@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/**/*.{html,js}"],
+  content: [
+    "./index.html",
+    "./dist/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
         'Inter': "'Inter' , sans-serif",
         'Jost': "'Jost' , sans-serif",
-        'gilroy':('')
+        'gilroy': ('')
       },
     },
   },
