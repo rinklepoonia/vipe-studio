@@ -590,6 +590,23 @@ video {
   flex-wrap: wrap;
 }
 
+.line::after{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 1px;
+  width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+
+.line:hover::after{
+  content: var(--tw-content);
+  width: 100%;
+}
+
 .fixed{
   position: fixed;
 }
@@ -721,10 +738,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-4{
-  margin-top: 1rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -813,10 +826,6 @@ video {
   max-width: 476px;
 }
 
-.max-w-\[50\%\]{
-  max-width: 50%;
-}
-
 .max-w-\[533px\]{
   max-width: 533px;
 }
@@ -855,14 +864,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin{
-  animation: spin 1s linear infinite;
+.animate-\[example\]{
+  animation: example;
 }
 
 @keyframes pulse{
@@ -875,31 +878,14 @@ video {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
   }
 }
 
-.animate-ping{
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  animation: bounce 1s infinite;
+.animate-spin{
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer{
@@ -924,6 +910,10 @@ video {
 
 .flex-wrap{
   flex-wrap: wrap;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
@@ -1058,6 +1048,10 @@ video {
   border-radius: 80px;
 }
 
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1147,6 +1141,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-2{
@@ -1674,6 +1672,14 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-700{
+  transition-duration: 700ms;
+}
+
+.duration-\[5s\]{
+  transition-duration: 5s;
+}
+
 .ease-linear{
   transition-timing-function: linear;
 }
@@ -1717,27 +1723,6 @@ video {
 .ff-konexy-regular {
   font-family: 'Konexy';
 }
-
-/* .show {
-    opacity: 1;
-    visibility: visible;
-} */
-
-/* ::-webkit-scrollbar {
-    width: 10px !important;
-    height: 0px !important;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: antiquewhite;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--fc-Orange);
-    border-radius: 20px;
-    width: 10px !important;
-} */
 
 .after\:absolute::after{
   content: var(--tw-content);
@@ -1831,13 +1816,14 @@ video {
   border-color: transparent;
 }
 
-.hover\:hover\:border-transparent:hover:hover{
-  border-color: transparent;
-}
-
 .hover\:bg-\[\#6022EA\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(96 34 234 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover{
@@ -1861,23 +1847,13 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:shadow-purple-300:hover{
-  --tw-shadow-color: #d8b4fe;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:shadow-blue-300:hover{
-  --tw-shadow-color: #93c5fd;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:shadow-blue-200:hover{
-  --tw-shadow-color: #bfdbfe;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .hover\:shadow-blue-100:hover{
   --tw-shadow-color: #dbeafe;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-purple-300:hover{
+  --tw-shadow-color: #d8b4fe;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -2032,10 +2008,6 @@ video {
 @media (min-width: 640px){
   .sm\:w-\[50\%\]{
     width: 50%;
-  }
-
-  .sm\:justify-center{
-    justify-content: center;
   }
 
   .sm\:pb-\[80px\]{

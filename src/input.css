@@ -30,6 +30,12 @@
     }
 }
 
+@layer components {
+    .line {
+        @apply after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 hover:after:w-full after:duration-300 after:left-0;
+    }
+}
+
 @font-face {
     font-family: 'Konexy';
     src: url(/dist/font/konexy-personal-use/KonexyPersonalUse.otf);
@@ -47,24 +53,3 @@
 .ff-konexy-regular {
     font-family: 'Konexy';
 }
-
-/* .show {
-    opacity: 1;
-    visibility: visible;
-} */
-
-/* ::-webkit-scrollbar {
-    width: 10px !important;
-    height: 0px !important;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: antiquewhite;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--fc-Orange);
-    border-radius: 20px;
-    width: 10px !important;
-} */
