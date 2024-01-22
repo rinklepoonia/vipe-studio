@@ -36,6 +36,13 @@
     }
 }
 
+@layer utilities {
+    /* Hide scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 @font-face {
     font-family: 'Konexy';
     src: url(/dist/font/konexy-personal-use/KonexyPersonalUse.otf);

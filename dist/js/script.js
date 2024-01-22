@@ -3,7 +3,8 @@ const menulist = document.querySelector(".menulist")
 
 menuIcon.addEventListener("click", function () {
     menulist.classList.toggle("!right-0");
-    menuIcon.classList.toggle("cross")
+    menuIcon.classList.toggle("cross");
+    document.body.classList.toggle("overFlowHidden")
 })
 
 // back-to-top
@@ -23,6 +24,6 @@ topBtn.addEventListener("click", function () {
     document.documentElement.scrollTop = 0;
 
 })
-function topfuncition() {
-    window.scrollTo({ behavior: "smooth" });
-}
+// function topfuncition() {
+//     window.scrollTo({ behavior: "smooth" });
+// }

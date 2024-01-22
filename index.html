@@ -32,25 +32,26 @@
 <body>
     <!-- ==================nav=================== -->
     <header class="bg-[black] py-[14px] ">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <nav>
-                <div class="flex items-center justify-between gap-10">
+                <div
+                    class="flex items-center justify-between xl:gap-10 gap-2 fixed w-full bg-black top-0 left-0 z-[15]">
 
                     <div class="blank"><img class="cursor-pointer" src="./dist/images/Logo.png" alt="Logo"></div>
 
                     <div
-                        class="menuIcon max-lg:w-[30px] max-lg:h-[30px] max-lg:flex max-lg:justify-between max-lg:flex-col max-lg:cursor-pointer relative z-[5] right-0 ">
+                        class="menuIcon max-lg:w-[30px] max-lg:h-[30px] max-lg:flex max-lg:justify-between max-lg:flex-col max-lg:cursor-pointer relative z-[13] right-0 ">
 
                         <span class=" max-lg:w-full max-lg:h-[4px] max-lg:bg-[white]"></span>
                         <span class=" max-lg:w-full max-lg:h-[4px] max-lg:bg-[white]"></span>
                         <span class=" max-lg:w-full max-lg:h-[4px] max-lg:bg-[white]"></span>
                     </div>
                     <div
-                        class=" menulist flex  justify-between items-center w-full max-lg:w-full max-lg:h-full max-lg:min-h-screen max-lg:bg-black max-lg:justify-center max-lg:flex-col max-lg:fixed max-lg:top-0 max-lg:-right-full max-lg:z-[2] transition-all ease-linear duration-300 ">
+                        class=" menulist flex  justify-between items-center w-full max-lg:w-full max-lg:h-full max-lg:min-h-screen max-lg:bg-black max-lg:justify-center max-lg:flex-col max-lg:fixed max-lg:top-0 max-lg:-right-full max-lg:z-[11] transition-all ease-linear duration-300 ">
 
                         <ul class="flex lg:flex-row max-lg:flex-col gap-4 items-center">
                             <li class="relative inline-block group">
-                                <a href="#wordpress" aria-label="WordPresssolution"
+                                <a href="#wordpress" aria-label="WordPresssolution" onclick="openNav()"
                                     class="text-white flex gap-1 ff-gilroy-normal font-normal text-base leading-6 text-nowrap">WordPress
                                     Solution <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +74,7 @@
                             </li>
 
                             <li class="relative inline-block group">
-                                <a href="#" aria-label="Services"
+                                <a href="#service" aria-label="Services"
                                     class="text-white flex gap-1 ff-gilroy-normal font-normal text-base leading-6 text-nowrap">Services
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +101,7 @@
                             </li>
 
                             <li class="relative inline-block group">
-                                <a href="#" aria-label="About"
+                                <a href="#about" aria-label="About"
                                     class="text-white flex gap-1 ff-gilroy-normal font-normal text-base leading-6 text-nowrap">About
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +137,7 @@
                         <ul
                             class=" lg:flex  items-center justify-center gap-[36px] lg:flex-row max-lg:flex-col pl-0 lg:block hidden">
                             <li><a class="text-white text-[16px] font-normal lg:block hidden leading-[150%] ff-Gilroy-regular text-nowrap"
-                                    href="">1
+                                    href="tel:+496170961709">1
                                     888
                                     266-6917
                                     <span class="text-[14px] font-[inter]">(<span
@@ -150,7 +151,7 @@
                             </li>
 
                             <li class=" flex relative group max-lg:flex-col items-center  gap-2">
-                                <img class="animate-spin" src="./dist/images/nav-globe.png" alt="nav-globe">
+                                <img src="./dist/images/nav-globe.png" alt="nav-globe">
                                 <a href="" aria-label="WordPresssolution"
                                     class="text-white flex gap-1 font-Gilroy-Light font-normal text-base leading-6 text-nowrap">Eng
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
@@ -178,7 +179,7 @@
     </header>
     <!-- ===========================hero-section-1================ -->
     <section id="wordpress" class="bg-[black] py-[100px]">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row flex flex-wrap flex-row mx-[-12px]  lg:flex-row flex-col-reverse relative">
                 <div class="col-6 lg:w-[50%] px-[12px]">
                     <h1
@@ -221,30 +222,31 @@
                         <img class="w-full h-full object-cover rounded-[20px]" src="./dist/images/hero-section1.png"
                             alt="hero-section1">
                         <div
-                            class="absolute bottom-[2%] left-[3%] bg-[#0000004d] backdrop-blur-[10px] rounded-[20px] pt-[8px] pb-[13px] ps-5 pe-7">
-                            <img class="pb-[5px]" src="./dist/images/trustpilot-1.png" alt="trustpilot-1">
-                            <img class="pb-[8px]" src="./dist/images/stars-img.png" alt="stars-img">
-                            <p class="text-white text-[16px] font-normal leading-[150%] font-[Jost] ">Rated 5.0
+                            class="absolute bottom-[2%] left-[3%] bg-[#0000004d] backdrop-blur-[10px] rounded-[20px] pt-[8px] pb-[13px] ps-5 pe-7 max-sm:pe-4">
+                            <img class="pb-[5px] max-sm:h-[24px]" src="./dist/images/trustpilot-1.png"
+                                alt="trustpilot-1">
+                            <img class="pb-[8px] max-sm:h-[26px]" src="./dist/images/stars-img.png" alt="stars-img">
+                            <p
+                                class="text-white text-[16px] max-sm:text-[13px] font-normal leading-[150%] font-[Jost] ">
+                                Rated 5.0
                                 Excellent</p>
                         </div>
                     </div>
                 </div>
 
                 <div
-                    class="ellips1 w-[187px] h-[187px] bg-[#6022EA] blur-[100px] absolute bottom-[-2%] left-[46%] z-0 xl:block hidden">
+                    class="  ellipse w-[187px] h-[187px] bg-[#6022EA] blur-[100px] absolute bottom-[0] left-[45%] z-0 xl:block hidden">
                 </div>
-
                 <div
-                    class="ellips1 w-[187px] h-[187px] bg-[#6022EA] blur-[100px] absolute top-[-5px] right-[-2%] z-0 xl:block hidden">
+                    class="ellipse w-[187px] h-[187px] bg-[#6022EA] blur-[90px] absolute top-[-10%] right-[0] z-0 xl:block hidden">
                 </div>
-
 
             </div>
         </div>
     </section>
     <!-- =======================tell-us-more===================== -->
     <section class="bg-[#130F1B] py-[64px]">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row flex flex-wrap flex-row mx-[-12px]">
                 <div class="col-6 lg:w-[50%] px-[12px]">
                     <h2 class="text-white text-[36px] font-normal leading-normal ff-konexy-regular">Tell us more....
@@ -260,10 +262,9 @@
                     <div
                         class="search-box flex max-w-[573px] height-[64px] items-center py-[20px] ps-[30px] pe-[20px] mt-5 lg:mt-0 rounded-[80px] border-[#ffffff1a] bg-[#252525]">
                         <input type="text" placeholder="What do you need assistance with?"
-                            class="text-white text-[16px] font-normal leading-[150%] opacity-[0.7] w-full  ff-Gilroy-regular bg-transparent"
+                            class="text-white text-[16px] font-normal leading-[150%] w-full  ff-Gilroy-regular bg-transparent"
                             style="border: none; outline: none;">
-                        <svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z"
                                 stroke="white" stroke-width="2.5" stroke-linecap="round" />
@@ -299,13 +300,13 @@
         </div>
     </section>
     <!-- ===================== featured-on-section-2================= -->
-    <section class="pt-[100px] pb-[90px] bg-[#F6F6F6]">
-        <div class="container mx-auto px-[12px]">
+    <section class="pt-[100px] pb- [90px] bg-[#F6F6F6]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <h3
                 class="text-black md:text-[48px] text-[35px] font-normal leading-normal ff-konexy-regular sm:pb-[80px] pb-[60px] text-nowrap">
                 Featured on</h3>
             <div
-                class="flex flex-wrap max-2xl:justify-center items-center gap-[60px] relative animate-[example] duration-[5s]">
+                class="flex flex- wrap  justify-between items-center gap-[60px] overflow-x-scroll pb-[90px] no-scrollbar">
                 <img class="cursor-pointer" src="./dist/images/section2-img1.png" alt="section2-img1">
                 <img class="cursor-pointer" src="./dist/images/section2-img2.png" alt="section2-img2">
                 <img class="cursor-pointer" src="./dist/images/section2-img3.png" alt="section2-img3">
@@ -315,10 +316,12 @@
             </div>
         </div>
     </section>
-    <!-- ===================Integer-et-section-3============== -->
-    <section class="pt-[97px] pb-[129px] ">
-        <div class="container mx-auto px-[12px]">
-            <h3 class="text-black text-[48px] font-normal leading-normal ff-konexy-regular pb-[54px]">Integer et nisl
+    <!-- ===================Integer-et-(3-cards)section-3============== -->
+    <section class="pt-[97px] pb-[129px] max-lg:pb-[40px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
+            <h3
+                class="text-black text-[48px] max-sm:text-[30px] font-normal leading-normal ff-konexy-regular pb-[54px]">
+                Integer et nisl
                 non</h3>
             <div class="row flex flex-wrap flex-row mx-[-12px] justify-center">
                 <div class="col-4 lg:w-[33.33%] md:w-[50%] px-[12px]">
@@ -417,16 +420,16 @@
             </div>
         </div>
     </section>
-    <!-- ==============all-vipe-studio-section-4================= -->
+    <!-- ==============all-vipe-studio-service-section-4================= -->
     <section id="service" class="bg-black py-[81px] relative z-2">
-        <div class="container mx-auto px-[12px]">
-            <div class="row flex flex- wrap flex-row mx-[-12px]">
-                <div class="col-4 lg:w-[33.33%] md:w- [50%] px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
+            <div class="row flex flex-wrap justify-between flex-row mx-[-12px]">
+                <div class="col-4 lg:w-[33.33%] md:w-full px-[12px]">
                     <h4
-                        class="text-white md:text-[40px] text-[30px] font-normal leading-normal ff-konexy-regular max-w-[533px]">
+                        class="text-white md:text-[40px] text-[30px] font-normal leading-normal ff-konexy-regular max-w-[533px] max-lg:mb-7 max-sm:mb-0">
                         All
-                        Vipe Studio<br>
-                        WordPress<br>
+                        Vipe Studio
+                        WordPress
                         services include:</h4>
                 </div>
                 <div class="col-4 lg:w-[33.33%] md:w- [50%] px-[12px]">
@@ -473,7 +476,7 @@
                     </ul>
                 </div>
                 <div class="col-4 lg:w-[33.33%] md:w- [50%] px-[12px]">
-                    <ul class=" flex flex-col gap-[11px] max-lg:mt-10">
+                    <ul class=" flex flex-col gap-[11px] max-md:mt-10">
                         <li class="text-white text-[24px] font-semibold leading-[130%] pb-[12px]">By Services</li>
                         <li class="flex gap-[10px] items-center">
                             <img src="./dist/images/cute-svg.png" alt="cute-svg">
@@ -519,9 +522,10 @@
                 </div>
             </div>
 
-            <div class="pt-[120px]">
-                <div class="max-w-[1320px] w-full bg-black rounded-[25px] relative z-10">
-                    <div class="row relative justify- center  -lg pt-[27px] pe-[32px] pb-[27px] ps-[33px] ">
+            <div class="lg:pt-[120px] max-lg:pt-[60px]">
+                <div class="max-w-[1320px] w- full bg-black rounded-[25px] relative z-10">
+                    <div
+                        class="row flex-wrap justify-between  -lg pt-[27px] mx-[-12px] relative lg:pe-[32px] lg:pb-[27px] lg:ps-[33px] ">
                         <div class="col-4 lg:w-[33.33%] px-[12px] relative z-[2]">
                             <p class="text-white text-[35px] font-normal ff-Gilroy-regular max-w-[324px] pb-[38px]">Not
                                 Sure
@@ -529,7 +533,7 @@
                                 need yet?
                             </p>
                             <button
-                                class="text-white text-[16px] font-semibold leading-[150%] mb-[20px] py-[10px] px-[24px] bg-[#6022EA] rounded-[80px] text-nowrap border-[2px] border-transparent hover:shadow-purple-300 shadow-lg hover:text-[#6022EA] hover:bg-white hover:border-[2px] hover:border-[#6022EA] duration-300 ease-linear transition-all">Schedule
+                                class="text-white text-[16px] font-semibold leading-[150%] py-[10px] px-[24px] bg-[#6022EA] rounded-[80px] text-nowrap border-[2px] border-transparent hover:shadow-purple-300 shadow-lg hover:text-[#6022EA] hover:bg-white hover:border-[2px] hover:border-[#6022EA] duration-300 ease-linear transition-all">Schedule
                                 An Appointment</button>
                         </div>
                         <div class="col-4 lg:w-[33.33%] px-[12px] max-md:mt-10">
@@ -579,19 +583,18 @@
     </section>
     <!-- ==============long-term-section-5============ -->
     <section class="bg-[#F6F6F6] py-10">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <h3
-                class="text-black md:text-[48px] text-[35px] font-normal leading-[56px] ff-konexy-regular max-w-[631px] pt-5">
-                Long Term
-                <br>WordPress Partner
+                class="text-black md:text-[48px] sm:text-[35px] text-[20px] font-normal leading-normal ff-konexy-regular max-w-[631px]">
+                Long Term WordPress Partner
             </h3>
             <p
                 class=" text-[#313131] text-[16px] font-normal leading-[24px] ff-Gilroy-regular max-w-[693px] pt-5 pb-8 ">
                 Our motto is the
                 long-term
-                partnership – we will not only develop your perfect website, but will<br> be behind you through
+                partnership – we will not only develop your perfect website, but will be behind you through
                 the whole process. They already trusted us:</p>
-            <div class="flex flex-wrap gap-[58px] items-center pb-5 max-2xl:justify-center ">
+            <div class="flex gap-[58px] items-center justify-between overflow-x-scroll no-scrollbar pb-[20px]">
                 <img class="cursor-pointer" src="./dist/images/secrion5-img1.png" alt="secrion5-img1">
                 <img class="cursor-pointer" src="./dist/images/section5-img2.png" alt="section5-img2">
                 <img class="cursor-pointer" src="./dist/images/section5-img3.png" alt="section5-img3">
@@ -603,7 +606,7 @@
     </section>
     <!-- ===========-Agile-WordPress-polygon-section-6-=========== -->
     <section class="pt-5 pb-10">
-        <div class="container mx-auto px-[12px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row flex flex- wrap flex-row mx-[-12px]">
                 <div class="col-5 lg:w-[41.66%] px-[12px] ">
                     <img class="w-full h-full object-cover cursor-pointer" src="./dist/images/section6-polygon-img.png"
@@ -611,17 +614,17 @@
                 </div>
                 <div class="col-7 lg:w-[58.33%] px-[12px]">
                     <h3
-                        class=" text-black md:text-[48px] sm-text-[35px] text-[20px] font-normal leading-normal ff-konexy-regular pt-[80px] ">
-                        <span class="text-[#6022EA]">Agile WordPress<br></span> Development Project<br> management
+                        class=" text-black md:text-[48px] sm-text-[35px] text-[28px] font-normal leading-normal ff-konexy-regular md:pt-[80px] ">
+                        <span class="text-[#6022EA]">Agile WordPress</span> Development Project management
                     </h3>
                     <p class=" text-[#4C4C4C] text-[16px] leading-normal font-normal mx-w-[572px] pb-10 pt-3">
                         Suspendisse
                         consequat
                         egestas arcu
-                        et et. Viverra quis euismod neque luctus<br> bibendum. Fringilla in nibh fringilla
-                        vulputate in. Elit, ultricies vitae pulvinar arcu<br> dignissim ac non rutrum. Lacus tortor
+                        et et. Viverra quis euismod neque luctus bibendum. Fringilla in nibh fringilla
+                        vulputate in. Elit, ultricies vitae pulvinar arcu dignissim ac non rutrum. Lacus tortor
                         sollicitudin risus eget euismod
-                        in<br> bibendum turpis.</p>
+                        in bibendum turpis.</p>
                     <button
                         class="text-white text-[16px] font-semibold leading-[150%] ff-gilroy-regular py-[10px] px-[24px] rounded-[80px] bg-[#6022EA] border-[2px] border-transparent hover:shadow-purple-300 shadow-lg hover:text-[#6022EA] hover:bg-white hover:border-[2px] hover:border-[#6022EA] duration-300 ease-linear transition-all cursor-pointer">
                         Explore </button>
@@ -634,19 +637,18 @@
     </section>
     <!-- ========-team-full-of-stars-section-7======= -->
     <section class="bg-[#F6F6F6]">
-        <div class="container mx-auto px-[12px]">
-            <div class="row flex flex-row flex-wrap mx-[12px] items-center justify-center">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
+            <div class="row flex flex-row mx-[12px] items-center">
                 <div class="col-6 xl:w-[50%] px-[12px]">
                     <h3
                         class="text-black md:text-[48px] text-[30px] font-normal leading-normal ff-konexy-regular pt-5 pb-4">
-                        Team Full of
-                        Stars
+                        Team Full of Stars
                     </h3>
                     <p class="text-black text-[16px] font-normal leading-6 ff-gilroy-regular pb-[32px] max-w-[476px]">
                         Suspendisse
                         consequat egestas
                         arcu et et. Viverra quis euismod neque luctus bibendum. Fringilla in nibh fringilla
-                        vulputate in. Elit,<br> ultricies vitae pulvinar arcu dignissim ac non rutrum. Lacus tortor<br>
+                        vulputate in. Elit, ultricies vitae pulvinar arcu dignissim ac non rutrum. Lacus tortor
                         sollicitudin
                         risus eget euismod
                         in bibendum turpis.</p>
@@ -667,8 +669,8 @@
         </div>
     </section>
     <!-- =======-Success-Guides-secion-8========= -->
-    <section class="pt-[217px] pb-[120px]">
-        <div class="container mx-auto px-[12px]">
+    <section class="md:pt-[217px] pt-[40px]">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
             <div class="row flex flex-row flex-wrap mx-[12px] justify-center">
                 <div class="col-4 xl:w-[33.33%] px-[12px]">
                     <img class="pt-[40px] pb-[50px] xl:pb-[0] cursor-pointer"
@@ -689,10 +691,10 @@
                         <button
                             class=" text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular shadow-purple-300 shadow-lg border border-[#6022EA] hover:bg-[#6022EA] hover:text-white py-[8px] px-[16px] rounded-[80px] transition-all duration-300 ease-linear">Category-4</button>
                     </div>
-                    <div class="row flex flex-row flex-wrap mx-[12px] justify-center">
+                    <div class="row flex flex-row flex-wrap mx- [12px] justify-center">
                         <div class="col-4 md:w-[33.33%] sm:w-[50%] px-[12px]">
                             <div
-                                class="box-1 border border-[#E6E6E6] border-solid hover:border-transparent rounded-[16px] pt-[15px] pb-[14px] pr-[17px] pl-[14px] cursor-pointer  shadow hover:shadow-lg duration-300 flex flex-col mt-[33px]">
+                                class="box-1 border border-[#E6E6E6] border-solid hover:border-transparent hover:shadow-blue-200 rounded-[16px] pt-[15px] pb-[14px] pr-[17px] pl-[14px] cursor-pointer  shadow hover:shadow-lg duration-300 flex flex-col mt-[33px]">
                                 <img src="./dist/images/section8-PPC-image.png" alt="section8-PPC-image">
                                 <p
                                     class="text-[black] text-[24px] font-semibold leading-[130%] ff-Gilroy-regular pt-[17px] pb-[10px]">
@@ -703,7 +705,7 @@
                                     Arcu
                                     amet, consectetur vel pellentesque mattis ipsum sed mattis sed.</p>
                                 <button
-                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-[45%] after:duration-300 after:transition-all after:ease-linear inline-block">Read
+                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start hover:opacity-[0.7]">Read
                                     More....</button>
                             </div>
                         </div>
@@ -721,11 +723,10 @@
                                     Arcu
                                     amet, consectetur vel pellentesque mattis ipsum sed mattis sed.</p>
                                 <button
-                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-[45%] after:duration-300 after:transition-all after:ease-linear inline-block">Read
+                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start hover:opacity-[0.7]">Read
                                     More....</button>
                             </div>
                         </div>
-
                         <div class="col-4 md:w-[33.33%] px-[12px]">
                             <div
                                 class="box-1 border border-[#E6E6E6] border-solid hover:border-transparent rounded-[16px] pt-[15px] pb-[14px] pr-[17px] pl-[14px] cursor-pointer  shadow hover:shadow-lg duration-300 flex flex-col mt-[33px]">
@@ -739,7 +740,7 @@
                                     Arcu
                                     amet, consectetur vel pellentesque mattis ipsum sed mattis sed.</p>
                                 <button
-                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start relative after:absolute after:w-0 after:h-[1px] after:bg-[#6022EA] after:bottom-0 hover:after:w-[45%] after:duration-300 after:transition-all after:ease-linear inline-block">Read
+                                    class="text-[#6022EA] text-[16px] font-semibold leading-[150%] ff-Gilroy-regular flex justify-start hover:opacity-[0.7]">Read
                                     More....</button>
                             </div>
                         </div>
@@ -748,21 +749,24 @@
             </div>
 
             <!-- ================graident-box========== -->
-            <div class="bg-[linear-gradient(91deg,#5F21E9_60%,#FA00FF_103%)] rounded-[17px] mt-10 translate-y-[91%]">
+            <div class="bg-[linear-gradient(91deg,#5F21E9_60%,#FA00FF_103%)] rounded-[17px] translate-y-[30%]">
 
-                <div class="flex justify-between items-center flex-wrap max-lg:justify-center max-md:mb-[40px] ">
-                    <div class="p-8">
+                <div
+                    class="flex justify-between items-center flex-wrap max-lg:justify-center max-md:mb-[0] max-lg:mb-[40px] ">
+                    <div class="md:p-8 p-5">
                         <h3
-                            class="text-white sm:text-[48px] text-[30px] font-normal leading-normal ff-konexy-regular text-nowrap">
+                            class="text-white md:text-[48px] text-[30px] font-normal leading-normal ff-konexy-regular text-nowrap">
                             Have
                             you</h3>
-                        <p class="text-white font-semibold text-[24px] leading-[131%] ff-Gilroy-regular">read our study
+                        <p
+                            class="text-white font-semibold md:text-[24px] text-[18px] leading-[131%] ff-Gilroy-regular max-w-[638px]">
+                            read our study
                             about Speed and
-                            Performance in<br> WordPress?</p>
+                            Performance in WordPress?</p>
                     </div>
-                    <div class="p-8">
+                    <div class=" md:p-8 p-2">
                         <button
-                            class=" text-[#6022EA] text-[19px] font-[inter] font-semibold leading-7 bg-white py-[14px] px-[38px] rounded-[137px] hover:bg-[#6022EA] hover:text-white transition-all ease-linear duration-300 shadow-purple-300 shadow-lg">Check
+                            class=" text-[#6022EA] text-[19px] font-[inter] font-semibold leading-7 bg-white py-[14px] px-[38px] rounded-[137px] hover:bg-[#6022EA] hover:text-white border hover:border-white transition-all ease-linear duration-300 shadow-purple-300 shadow-lg">Check
                             It Out</button>
                     </div>
                 </div>
@@ -770,21 +774,20 @@
         </div>
     </section>
     <!-- ==========-footer-========= -->
-    <footer class="bg-black py-10">
-        <div class="container mx-auto px-[12px]">
-            <div class=" flex flex-wrap justify-between items-center py-3  pb-20 pt-[140px]">
+    <footer id="about" class="bg-black py-10">
+        <div class="max-w-[1320px] mx-auto px-[12px]">
+            <div class=" flex flex-wrap justify-between items-center py-3  md:pb-20 pt-[140px]">
                 <img class="cursor-pointer" src="./dist/images/footer-logo.png" alt="footer-logo">
                 <div
-                    class="  border rounded-[80px] bg-white ps-[10px] pe-[50px] w-[450px] flex justify-between items-center max-md:mt-[20px]">
+                    class=" border rounded-[80px] bg-white ps-[10px] pe-[50px] w-[450px] flex justify-between items-center max-md:mt-[20px]">
                     <input type="text" placeholder="Search here...."
                         class="w-full text-[#6F6F6F] p-5 rounded-[80px] outline-none">
-                    <svg class=" cursor-pointer animate-spin" viewBox="0 0 24 24" width="22" height="22"
-                        viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" cursor-pointer" viewBox="0 0 24 24" width="22" height="22" viewBox="0 0 22 22"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.7"
                             d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z"
                             stroke="#313131" stroke-width="2.5" stroke-linecap="round" />
                     </svg>
-
                 </div>
             </div>
 
@@ -885,8 +888,7 @@
                     <div class="row flex flex-wrap flex-row mx-[-12px]">
                         <div class="col-6 md:w-[50%] px-[12px] max-lg:mt-[50px]">
                             <ul class="flex flex-col gap-[21px]">
-                                <li
-                                    class=" text-white text-[16px] font-normal leading-6 ff-gilroy-regular pb-[15px] relative line ">
+                                <li class=" text-white text-[16px] font-normal leading-6 ff-gilroy-regular pb-[15px]">
                                     Latest
                                     Articles</li>
                                 <li><a class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular max-w-[248px] relative line  "
@@ -990,16 +992,16 @@
 
                 <div class="flex gap-3 justify-center">
                     <p
-                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer hover:opacity-[0.5]">
                         Privacy</p>
                     <p
-                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer hover:opacity-[0.5]">
                         Careers</p>
                     <p
-                        class="text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class="text-white text-[14px] font-normal leading-normal ff-gilroy-regular  border-e-[1px] pr-[11px] cursor-pointer hover:opacity-[0.5]">
                         Media</p>
                     <p
-                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular cursor-pointer  relative after:absolute after:w-0 after:h-[1px] after:bg-[white] after:bottom-0 after:left-0 hover:after:w-full after:duration-300">
+                        class=" text-white text-[14px] font-normal leading-normal ff-gilroy-regular cursor-pointer hover:opacity-[0.5]">
                         Client Area</p>
                 </div>
                 <div class="flex gap-[17px] max-sm:mt-[30px] items-center">
